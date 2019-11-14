@@ -1,0 +1,18 @@
+﻿<Window x:Class="Proyecto_Parcial_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Parcial_2"
+        mc:Ignorable="d"
+        Title="Contacto" Height="300" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBox x:Name="txtNombre" Margin="0,2,12,5" TextChanged="TxtNombre_TextChanged" HorizontalAlignment="Center" Width="150"/>
+            <TextBox x:Name="txtCorreo" Margin="54,2,67,5" HorizontalAlignment="Center" Width="150" TextChanged="TxtCorreo_TextChanged"/>
+            <TextBox x:Name="txtTelefono" Margin="54,2,68,5" HorizontalAlignment="Center" Width="150" TextChanged="TxtTelefono_TextChanged"/>
+            <Button Content="Guardar" x:Name="btnGuardar" Click="btnGuardar_Click" Margin="78,15,95,15" HorizontalAlignment="Center" />
+
+        </StackPanel>
+    </Grid>
+</Window>
