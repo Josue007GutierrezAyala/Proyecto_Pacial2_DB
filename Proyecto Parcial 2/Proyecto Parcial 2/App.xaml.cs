@@ -15,6 +15,6 @@ namespace Proyecto_Parcial_2
     {
         static string databaseName = "Contactos.db";
         static string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        public static string databasePath = System.IO.Path.Combine(folderPath, databaseName);
+        public static string databasePath = System.IO.Path.Combine(folderPath, databaseName); 
     }
 }
