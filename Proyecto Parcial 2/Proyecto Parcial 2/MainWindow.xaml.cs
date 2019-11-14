@@ -35,11 +35,11 @@ namespace Proyecto_Parcial_2
                 Correo = txtCorreo.Text,
                 Telefono = txtTelefono.Text
             };
-            using (SQLiteConnection conexion = new SQLiteConnection(App.databasePath))
+            using (SQLiteConnection conexion = new SQLiteConnection(App.databasePath)) 
             {
                 conexion.CreateTable<Contactos>();
                 conexion.Insert(contacto);
-            }
+            };
             Close();
         }
 
