@@ -14,10 +14,14 @@ namespace Proyecto_Parcial_2.Clase
         public string Nombre { get; set; }
         public string Correo { get; set; }
         public string Telefono { get; set; }
+        public int RE { get; set; }
+        public String Pag { get; set; }
 
         public override string ToString()
         {
-            return $"{Nombre} - {Correo} - {Telefono} ";
+            return $"{Nombre} - {Correo} - {Telefono}- {RE} - {Pag} ";
         }
+       
+
     }
 }

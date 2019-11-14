@@ -6,19 +6,23 @@
         xmlns:local="clr-namespace:Proyecto_Parcial_2"
         mc:Ignorable="d"
         Title="Contacto" Height="300" Width="300">
-    <Grid>
-        <StackPanel Margin="10">
-            <TextBox x:Name="txtNombre" Margin="0,2,12,5" TextChanged="TxtNombre_TextChanged" HorizontalAlignment="Center" Width="150"/>
-            <TextBox x:Name="txtCorreo" Margin="54,2,67,5" HorizontalAlignment="Center" Width="150" TextChanged="TxtCorreo_TextChanged"/>
-            <TextBox x:Name="txtTelefono" Margin="54,2,68,5" HorizontalAlignment="Center" Width="150" TextChanged="TxtTelefono_TextChanged"/>
-            <Button Content="Guardar" x:Name="btnGuardar" Click="btnGuardar_Click" Margin="78,15,95,15" HorizontalAlignment="Center" />
-            <ComboBox FontSize="20" Name="cbFormaPago" Width="280" Margin="10"  BorderBrush="#400000"  BorderThickness="2">
-                <ComboBoxItem Content="Selecciona la forma de pago"  Selector.IsSelected="True"/>
-                <ComboBoxItem Content="Credito" />
-                <ComboBoxItem Content="Devito" />
-                <ComboBoxItem Content="Cheke" />
-                <ComboBoxItem Content="Efectivo" />
+    <Grid Margin="0,-2,0,0">
+        <StackPanel Margin="12,19,8,1" Cursor="Hand" >
+            <TextBox x:Name="txtNombre" Margin="0,2,12,5" TextChanged="TxtNombre_TextChanged" HorizontalAlignment="Center" Width="150" BorderBrush="#FFFF1493"  BorderThickness="3"/>
+            <TextBox x:Name="txtCorreo" Margin="54,2,67,5" HorizontalAlignment="Center" Width="150" TextChanged="TxtCorreo_TextChanged" BorderBrush="#FFFF1493"  BorderThickness="3"/>
+            <TextBox x:Name="txtTelefono" Margin="54,2,68,5" HorizontalAlignment="Center" Width="150" TextChanged="TxtTelefono_TextChanged" BorderBrush="#FFFF1493"  BorderThickness="3"/>
+            <ComboBox FontSize="12" x:Name="cbRangoEmpl" Margin="0,6,14,15"  BorderBrush="#FFFF1493"  BorderThickness="4" HorizontalAlignment="Center" SelectionChanged="CbRangoEmpl_SelectionChanged">
+                <ComboBoxItem Content="  Selecciona tu puesto "  Selector.IsSelected="True"/>
+                <ComboBoxItem Content="Agente de ventas" />
+                <ComboBoxItem Content="Fideicomisos" />
+                <ComboBoxItem Content="Portador de cheques" />
+                <ComboBoxItem Content="Gerente de sucursal" />
             </ComboBox>
+            <Label Content="Pago por el puesto: " HorizontalAlignment="Right" Height="27" Margin="0,0,145,0" Width="115"/>
+            <Button Content="Guardar" x:Name="btnGuardar" Click="btnGuardar_Click" Margin="78,50,95,15" HorizontalAlignment="Center"  />
+
         </StackPanel>
+        <TextBox x:Name="txtPago" Margin="135,151,7,97" HorizontalAlignment="Center" Width="150" TextChanged="TxtPago_TextChanged" BorderBrush="#FFFF1493"  BorderThickness="3"/>
     </Grid>
+
 </Window>

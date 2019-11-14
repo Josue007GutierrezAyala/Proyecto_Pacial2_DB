@@ -15,11 +15,13 @@ using System.Windows.Shapes;
 using Proyecto_Parcial_2.Clase; //pRIMERO EL NOMBRE DEL PROYECTO (LITERALMENTE)
 using SQLite;//Agregar
 
+
 namespace Proyecto_Parcial_2
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
+  
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -33,7 +35,9 @@ namespace Proyecto_Parcial_2
             {
                 Nombre = txtNombre.Text,
                 Correo = txtCorreo.Text,
-                Telefono = txtTelefono.Text
+                Telefono = txtTelefono.Text,
+                RE = cbRangoEmpl.SelectedIndex,
+                Pag = txtPago.Text,
             };
             using (SQLiteConnection conexion = new SQLiteConnection(App.databasePath)) 
             {
@@ -54,6 +58,19 @@ namespace Proyecto_Parcial_2
         }
 
         private void TxtTelefono_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+       
+        private void CbRangoEmpl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+       
+
+        private void TxtPago_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
