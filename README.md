@@ -1,0 +1,2 @@
+# Proyecto_Pacial2_DB
+PARCIAL 2 BASE DE DATOS SQL
