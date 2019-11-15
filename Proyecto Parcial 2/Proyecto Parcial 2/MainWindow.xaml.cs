@@ -37,7 +37,7 @@ namespace Proyecto_Parcial_2
                 Nombre = txtNombre.Text,
                 Correo = txtCorreo.Text,
                 Telefono = txtTelefono.Text,
-                RE = cbRangoEmpl.SelectedIndex,
+                RE= cbRangoEmpl.Text,
                 Pag = txtPago.Text,
             };
             using (SQLiteConnection conexion = new SQLiteConnection(App.databasePath)) 
@@ -71,7 +71,10 @@ namespace Proyecto_Parcial_2
 
         private void TxtPago_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+           
         }
+            
+            
+        
     }
 }
