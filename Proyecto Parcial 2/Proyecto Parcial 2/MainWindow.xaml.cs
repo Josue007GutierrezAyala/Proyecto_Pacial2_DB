@@ -28,9 +28,10 @@ namespace Proyecto_Parcial_2
         {
             InitializeComponent();
         }
-
+        
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
+            
             Contactos contacto = new Contactos()
             {
                 Nombre = txtNombre.Text,
@@ -59,7 +60,7 @@ namespace Proyecto_Parcial_2
 
         private void TxtTelefono_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+           
         }
 
        
@@ -67,8 +68,6 @@ namespace Proyecto_Parcial_2
         {
             
         }
-
-       
 
         private void TxtPago_TextChanged(object sender, TextChangedEventArgs e)
         {

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Proyecto_Parcial_2"
         mc:Ignorable="d"
         Title="Contacto" Height="300" Width="300">
-    <Grid Margin="0,-2,0,0">
+    <Grid Margin="0,-2,0,0" Background="Aqua">
         <StackPanel Margin="12,19,8,1" Cursor="Hand" >
             <TextBox x:Name="txtNombre" Margin="0,2,12,5" TextChanged="TxtNombre_TextChanged" HorizontalAlignment="Center" Width="150" BorderBrush="#FFFF1493"  BorderThickness="3"/>
             <TextBox x:Name="txtCorreo" Margin="54,2,67,5" HorizontalAlignment="Center" Width="150" TextChanged="TxtCorreo_TextChanged" BorderBrush="#FFFF1493"  BorderThickness="3"/>
