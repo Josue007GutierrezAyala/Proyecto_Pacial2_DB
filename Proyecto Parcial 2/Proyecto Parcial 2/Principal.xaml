@@ -22,5 +22,5 @@
         <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="191,377,0,0" VerticalAlignment="Top" Width="104" Click="BtnEliminar_Click" Height="25"/>
         <Label  Content="Registro de la agencia PRIFITACAR" HorizontalAlignment="Left" Height="40" Margin="206,17,0,0" VerticalAlignment="Top" Width="418" FontSize="23" FontFamily="Tahoma" FontWeight="Black" Grid.ColumnSpan="2" Background="White"/>
         <Image HorizontalAlignment="left" VerticalAlignment="Top"  Source="Empresa/hola.jpg" Height="60" Width="105" Margin="8,7,0,0" Grid.Column="1" />
-    </Grid>
+    </Grid> 
 </Window>
