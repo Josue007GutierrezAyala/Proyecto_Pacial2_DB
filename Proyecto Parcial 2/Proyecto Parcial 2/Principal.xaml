@@ -11,19 +11,16 @@
             <ColumnDefinition Width="155*"/>
             <ColumnDefinition Width="43*"/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name="lvContactos" HorizontalAlignment="Left" Height="286" Margin="76,68,0,0" VerticalAlignment="Top" Width="640" Grid.ColumnSpan="2" SelectionChanged="lvContactos_SelectionChanged" Background="NavajoWhite">
+        <ListView x:Name="lvContactos" HorizontalAlignment="Left" Height="286" Margin="90,76,0,0" VerticalAlignment="Top" Width="640" Grid.ColumnSpan="2" SelectionChanged="lvContactos_SelectionChanged" Background="NavajoWhite" BorderBrush="Black" BorderThickness="6" >
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="63,375,0,0" VerticalAlignment="Top" Width="75" Click="BtnAgregar_Click"/>
-        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="180,375,0,0" VerticalAlignment="Top" Width="75" Click="BtnEliminar_Click"/>
-        <Label Content="Registro de la agencia PRIFITACAR" HorizontalAlignment="Left" Height="40" Margin="242,10,0,0" VerticalAlignment="Top" Width="359" FontSize="23"/>
-        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="54" Margin="605,6,0,0" VerticalAlignment="Top" Width="73">
-            <Image HorizontalAlignment="left" VerticalAlignment="Top" Source=""/>
-
-        </StackPanel>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="63,375,0,0" VerticalAlignment="Top" Width="100" Click="BtnAgregar_Click" Height="28"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="191,377,0,0" VerticalAlignment="Top" Width="104" Click="BtnEliminar_Click" Height="25"/>
+        <Label  Content="Registro de la agencia PRIFITACAR" HorizontalAlignment="Left" Height="40" Margin="206,17,0,0" VerticalAlignment="Top" Width="418" FontSize="23" FontFamily="Tahoma" FontWeight="Black" Grid.ColumnSpan="2" Background="White"/>
+        <Image HorizontalAlignment="left" VerticalAlignment="Top"  Source="Empresa/hola.jpg" Height="60" Width="105" Margin="8,7,0,0" Grid.Column="1" />
     </Grid>
 </Window>
